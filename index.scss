@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+body {
+  margin: 0;
+  background-image: url(image/AdobeStock_362349160.jpeg);
+  background-size: cover;    
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.main{
+    width: 100vw;;
+
+    .welcome-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        h1{
+            font-size: 50px;
+            color: #f6cb02;
+        }
+    }
+
+    .seance-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:30px;
+        margin-top: 50px;
+        flex-wrap: wrap;
+        padding: 0 20px;
+
+        .seance-item {
+            border-radius: 5px;
+            width: 30%;
+            aspect-ratio: 1/1;
+            background-color: #f69d02ae;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-bottom: 20px;
+            padding: 5px;
+            flex-direction: column;
+
+            .seance-name {
+                font-size: 25px;
+                width: 37%;
+                text-align: center;
+            }
+
+            .seance-date {
+                font-size: 20px;
+            }
+
+            .seance-price {
+                font-size: 20px;
+            }
+
+            .seance-salle {
+                font-size: 20px;
+            }
+        }
+    }
+}
